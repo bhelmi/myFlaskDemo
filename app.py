@@ -11,18 +11,18 @@ def main():
 def index():
   return render_template('index.html')
 
-@app.route('/graph', methods=['POST'])
-def graph():
+#@app.route('/graph', methods=['POST'])
+#def graph():
 
-    ticker = request.form['ticker']
-    processed_ticker = ticker.upper()
-    return processed_ticker
+#    ticker = request.form['ticker']
+#    processed_ticker = ticker.upper()
+#    return processed_ticker
 
 
-def businessLogic(processed_ticker):
+#def businessLogic(processed_ticker):
     
-    quandl.ApiConfig.api_key = '8pUkznBCWKATjBv-NPZX'
-    data = quandl.get_table('WIKI/PRICES')
+#    quandl.ApiConfig.api_key = '8pUkznBCWKATjBv-NPZX'
+#    data = quandl.get_table('WIKI/PRICES')
     
 
 if __name__ == '__main__':
